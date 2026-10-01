@@ -1,1 +1,18 @@
-
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#198754"><link rel="manifest" href="/manifest.webmanifest"><link rel="stylesheet" href="/style.css">
+<title>Shri Ram Fresh</title></head>
+<body>
+<header><div><h1>Shri Ram Fresh</h1><small>Fresh • Fast • Ready for Pickup</small></div><button id="install">Install App</button></header>
+<main>
+<section class="hero"><div><h2>Skip the billing queue.</h2><p>Order ahead, choose pickup, and collect when your order is ready.</p></div><button onclick="go('shop')">Start Order</button></section>
+<div id="offer" class="offer hidden"></div>
+<nav><button onclick="go('shop')">🛒 Shop</button><button onclick="go('orders')">📦 My Orders</button><button onclick="showAuth()">👤 Account</button><button onclick="showOwner()">⚙️ Owner</button></nav>
+<section id="shop"><div class="tabs"><button data-cat="Vegetables">🥬 Vegetables</button><button data-cat="Fruits">🍎 Fruits</button><button data-cat="Dairy">🥛 Dairy</button></div><div id="products" class="grid"></div></section>
+<section class="basket"><h2>Your Basket</h2><div id="basket"></div><div class="total">Total ₹<span id="total">0</span></div><div class="pay-note">💵 <b>Pay at Store</b><br><small>Place your order now and pay when you collect it.</small></div><select id="pickup"><option>As soon as ready</option><option>Within 15 minutes</option><option>Within 30 minutes</option><option>Within 1 hour</option></select><button class="checkout" onclick="checkout()">⚡ Place Order</button></section>
+<section id="orders"><h2>My Orders</h2><div id="myOrders"></div></section>
+<section id="auth" class="panel hidden"><h2>Customer Account</h2><input id="name" placeholder="Name"><input id="email" placeholder="Email"><input id="password" type="password" placeholder="Password (6+ characters)"><button onclick="register()">Create Account</button><button onclick="login()">Login</button><p id="authMsg"></p></section>
+<section id="owner" class="panel hidden"><h2>Owner Dashboard</h2><div id="ownerOrders"></div><h3>➕ Add Item</h3><div class="formgrid"><input id="pn" placeholder="Item name"><select id="pc"><option>Vegetables</option><option>Fruits</option><option>Dairy</option></select><input id="pp" type="number" placeholder="Price"><input id="pu" placeholder="Unit e.g. kg"><textarea id="pb" placeholder="Benefits"></textarea></div><button onclick="addProduct()">Add Item</button><h3>🎁 Offer of the Day</h3><input id="ot" placeholder="Offer title"><input id="od" placeholder="Offer details"><button onclick="addOffer()">Publish Offer</button></section>
+</main><footer>Shri Ram Fresh • Order ahead. Pick up fast.</footer>
+<script src="/app.js"></script></body></html>

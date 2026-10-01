@@ -1,0 +1,5 @@
+{
+"name":"Shri Ram Fresh","short_name":"Shri Ram Fresh","start_url":"/","display":"standalone",
+"background_color":"#edf8ff","theme_color":"#198754",
+"icons":[{"src":"/icons/icon-192.png","sizes":"192x192","type":"image/png"},{"src":"/icons/icon-512.png","sizes":"512x512","type":"image/png"}]
+}
