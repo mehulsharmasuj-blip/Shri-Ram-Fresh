@@ -4,10 +4,13 @@
   "private": true,
   "description": "Shri Ram Fresh customer ordering and owner POS application",
   "main": "server.js",
-  "scripts": { "start": "node server.js" },
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "sqlite3": "^11.10.0",
-    "express": "^5.1.0"
-
+    "sqlite3": "^5.1.7",
+    "express": "^4.19.2"
   }
+}
+
