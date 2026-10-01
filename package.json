@@ -1,0 +1,14 @@
+{
+  "name": "shri-ram-fresh",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shri Ram Fresh customer ordering and owner POS application",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.10.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
