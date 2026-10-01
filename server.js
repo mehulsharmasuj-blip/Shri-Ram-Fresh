@@ -190,5 +190,5 @@ app.post("/api/owner/offers",owner,(req,res)=>{
   res.json(db.prepare("SELECT * FROM offers WHERE id=?").get(r.lastInsertRowid));
 });
 
-app.get("*",(req,res)=>res.sendFile(path.join(__dirname,"public","index.html")));
+app.get("/*splat",(req,res)=>res.sendFile(path.join(__dirname,"public","index.html")));
 app.listen(PORT,()=>console.log(`Shri Ram Fresh running on port ${PORT}`));
