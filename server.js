@@ -2,7 +2,7 @@ const express=require("express");
 const path=require("path");
 const bcrypt=require("bcryptjs");
 const jwt=require("jsonwebtoken");
-const Database=require("better-sqlite3");
+const Database=require("sqlite3");
 
 const app=express();
 const PORT=process.env.PORT||3000;
